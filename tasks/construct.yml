@@ -46,7 +46,7 @@ run:
     ls
     ls lgpo
     
-    cp lgpo/LGPO.zip ./LGPO.zip
+    cp ./lgpo/LGPO.zip ./LGPO.zip
 
     if [ -z "./LGPO.zip" ]; then
       echo "LGPO needs to be in working dir."
