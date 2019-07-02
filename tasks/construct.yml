@@ -34,7 +34,9 @@ run:
     fi
 
     chmod +x ${STEMBUILD_FILE}
-
+    
+    ls
+    
     if [ -z "lgpo/LGPO.zip" ]; then
       echo "No zip file found in input."
       echo "Contents of lgpo input:"
