@@ -35,9 +35,6 @@ run:
 
     chmod +x ${STEMBUILD_FILE}
     
-    ls
-    ls lgpo
-    
     if [ -z "lgpo/LGPO.zip" ]; then
       echo "No zip file found in input."
       echo "Contents of lgpo input:"
@@ -46,7 +43,10 @@ run:
     fi
     
     #LGPO needs to be in the working folder (where stembuild is called fom)
-    cp lgpo/LGPO.zip ./LGPO.zip
+    ls
+    ls lgpo
+    
+    scp lgpo/LGPO.zip ./LGPO.zip
 
     if [ -z "./LGPO.zip" ]; then
       echo "LGPO needs to be in working dir."
